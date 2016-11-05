@@ -1,0 +1,24 @@
+doctype html
+html(lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths")
+head
+	meta(charset="utf-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1.0")
+	block title
+		title Главная - Капитал Групп
+	link(href="/content/site.css" rel="stylesheet")
+	link(href="favicon.ico" rel="shortcut icon" type="image/x-icon")
+body
+	form(method="post" action="./" id="ctl01")
+
+		header
+			img(src="/content/kapital-logo-w500.png" class="logo")
+		.body
+			.menu
+				block menu
+					include ./menu.pug
+			.main
+				block main 
+					include ./main.pug
+			.footer
+				block footer
+					include ./footer.pug
