@@ -4,27 +4,28 @@ html{
     flex-direction: column;
     justify-content: space-between;
     max-width: 960px;
+    font-family: sans-serif;
 }
 
 html::after {
   content: "";
   background: url('/content/kaska.jpg') no-repeat;
-  opacity: 0.5;
+  opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;   
+  z-index: -1;
+  background-size: cover;    
 }
 
 main {
-    max-width: 500px;
+    max-width: 800px;
 }
 
-
 main article::after {
-    background: white;
+  background: white;
   content: "";
   opacity: 0.5;
   top: 0;
@@ -35,14 +36,62 @@ main article::after {
   z-index: -1;       
 }
 
-img.logo {
-    width: 100%;
+header {
+    display: flex;
+    flex-direction: column;    
+}
+
+.header-row1 {
+    display: flex;
+    flex-direction: column;
+    color: green;
+}
+
+.site-title h2 {
+    font-style: italic;
+    font-weight: initial;    
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;    
+}
+
+.logo img {
+    width: 160px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 5px;    
+}
+
+body nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 body nav .sf-menu li{
     background: greenyellow;
 }
 
-body nav .sf-menu li{
+body nav .sf-menu li li {
     background: greenyellow;
+}
+
+.article-header {
+    margin-left: 50px;
+} 
+
+main article {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
