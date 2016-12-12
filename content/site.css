@@ -1,80 +1,48 @@
-﻿html {
-    min-width:1000px;
+html{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 960px;
 }
-body {
-    background-color:white;
-    background: #fff url('/content/bg.gif') repeat-x 50% 0;
-    padding-bottom: 60px;
 
-    font-family: Helvetica, Arial, Sans-serif;
-    color: #555;
-    font-size: 0.875em;
-    line-height: 1.6em;
+html::after {
+  content: "";
+  background: url('/content/kaska.jpg') no-repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
-.left-col{
-    display: inline-block;
-    vertical-align: top;
-    padding-left: 10px;
-    padding-right: 50px;
-    }
-.menu {
-    padding-top:20px;
+
+main {
+    max-width: 500px;
 }
-.menu ul li {
-    padding: 0 0 0 0;
-    width: 150px;
-    font-family: arial, verdana, sans-serif;
-    /*font-weight: bold;*/
-    list-style-type: none;
+
+
+main article::after {
+    background: white;
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;       
 }
-.menu ul li a {
-    text-decoration:none;
-}
-.menu ul li a.active, .menu ul li a:hover {
-    text-decoration:underline;
-}
-.menu-l2{
-    font-size:0.9em;
-    padding-left: 10px;
-}
-.menu-l3{
-    font-size:0.9em;
-    padding-left: 10px;
-    }
-.main{
-    display: inline-block;
-    max-width: 700px;
-}
-footer{
-    margin-top:30px;
-    /*padding:0px;*/
+
+img.logo {
     width: 100%;
-    text-align: center;
-    /*position:fixed;
-    bottom:0px;*/
-}
-footer p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    background-color: white;
-    padding-bottom: 20px;
-    padding-top: 20px;
 }
 
-h1, h2 { 
-    font-size: 1.71em;
-    margin: 0;
-    color: #7b0;
-    line-height: 1.2em;
-    padding-left: 30px;
+body nav .sf-menu li{
+    background: greenyellow;
 }
-a {
-    color: #808080;
-}
-a:visited {
-    color: #333;
-}
-.contacts .address {
-    width:200px;
-    display:inline-block;
+
+body nav .sf-menu li{
+    background: greenyellow;
 }
