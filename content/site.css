@@ -20,6 +20,22 @@ html::after {
   background-size: cover;    
 }
 
+html.building::after{
+    background: url('/content/building/kran.png') no-repeat;    
+}
+
+html.building-partners::after, html.building-contacts::after{
+    background: url('/content/building/partners/dom.jpg') no-repeat;    
+}
+
+html.project::after{
+    background: url('/content/project/visotka.jpg') no-repeat;
+}
+
+html.project-price::after, html.project-requisites::after{
+    background: url('/content/project/house1.png') no-repeat;
+}
+
 main {
     max-width: 800px;
 }
